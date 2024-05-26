@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="s_logo.png">
+        <title>Shidhira Tech</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="userForm">
+                <input type="number" id="select1" name="select1" placeholder="Enter Rank" required>
+                <select id="input1" name="input1" required>
+                    <option value="">Select Branch</option>
+                    <!--<option value="AI">AI</option>
+                    <option value="CS">CS</option>
+                    <option value="ME">ME</option>
+                    <option value="CE">CE</option>
+                    <option value="EC">EC</option>
+                    <option value="DS">DS</option>
+                    <option value="SA">SA</option>
+                    <option value="CY-CS">CY-CS</option>-->
+                </select>
+                <select id="round_select" name="round" required>
+                    <option value="">Select Round</option>
+                    <option value="1">Round 1</option>
+                    <option value="2">Round 2</option>
+                    <option value="3">Veterinary</option>
+                </select>
+                <select id="input2" name="input2" required>
+                    <option value="">Select Category</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="user-input">
+            <div class="rank"></div>
+            <div class="branch"></div>
+            <div class="round"></div>
+            <div class="category"></div>
+        </div>
+
+        <p style="text-align: center; width: 100%; margin-top: 30px; color: red;"><strong>Note: </strong>All fields are mandatory</p>
+        <div class="res">
+            <div class="output">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>College ID</th>
+                            <th>College Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="branches.js"></script>
+        <script src="selection.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

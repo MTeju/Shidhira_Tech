@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: rgb(238,238,238);
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 20px;
+}
+
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.container form input{
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    padding-top: 1.23%;
+    padding-bottom: 1.23%;
+}
+
+.container form select{
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+    font-size: 22px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding-top: 1.23%;
+    padding-bottom: 1.23%;
+}
+
+.container form input[type="submit"]{
+    border: none;
+    background: blue;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.container form input[type="submit"]:hover{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.user-input{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.user-input .branch{
+    height: 100%;
+    width: 15%;
+    background: rgb(219, 219, 219);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-input .category{
+    height: 100%;
+    width: 15%;
+    background: rgb(219, 219, 219);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-input .rank{
+    height: 100%;
+    width: 15%;
+    background: rgb(219, 219, 219);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-input .round{
+    height: 100%;
+    width: 15%;
+    background: rgb(219, 219, 219);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.res{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.res {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    text-align: center;
+}
+
+.res .output {
+    width: 100%; 
+    max-width: 800px; 
+}
+
+/*.res .output{
+    height: auto;
+    width: 80%;
+}*/
+
+.output table{
+    border-collapse: collapse;
+    width: 100%;
+    background: rgb(219, 219, 219);
+    padding: 20px;
+    text-align: center;
+}
+
+.output table th{
+    height: 40px;
+    background: rgb(224, 224, 224);
+    width: 5%;
+}
+
+.output table tr{
+    height: 40px;
+    padding-top: 10px;
+}
+
+.output table tr td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table tr:nth-child(odd){
+    background: rgb(232, 232, 232);
+}
+
+table tr:nth-child(even){
+    background: rgb(238,238,238);
+}
+
+@media only screen and (max-width: 768px) {
+   .container form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container form input{
+    font-size: 18px;
+    width: 98%;
+    height: 50px;
+   }
+
+   .container form select{
+    font-size: 18px;
+    width: 98%;
+    height: 50px;
+   }
+
+   .container form input[type="submit"]{
+    font-size: 18px;
+    width: 98%;
+    height: 50px;
+   }
+
+   .user-input{
+    font-size: 15px;
+    gap: 6px;
+   }
+   .user-input .rank{
+    height: 40px;
+    width: 50%;
+   }
+
+   .user-input .category{
+    height: 40px;
+    width: 50%;
+   }
+
+   .user-input .branch{
+    height: 40px;
+    width: 50%;
+   }
+
+   .user-input .round{
+    height: 40px;
+    width: 50%;
+   }
+
+   .res {
+    flex-direction: column; 
+    align-items: center; 
+   }
+
+    .res .output {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    .output table {
+        font-size: 80%;
+    }
+
+    .output table th{
+        border-spacing: 50px;
+    }
+    .output table th,
+    .output table td {
+        padding: 8px;
+    }
+
+    .output table {
+        font-size: 80%;
+    }
+
+    .output table th,
+    .output table td {
+        padding: 8px;
+    }
+
+}
