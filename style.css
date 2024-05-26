@@ -43,6 +43,7 @@ html, body{
     border: none;
     padding-top: 1.23%;
     padding-bottom: 1.23%;
+    background-color: white;
 }
 
 .container form select{
@@ -55,6 +56,7 @@ html, body{
     border: none;
     padding-top: 1.23%;
     padding-bottom: 1.23%;
+    background-color: white;
 }
 
 .container form input[type="submit"]{
@@ -86,7 +88,7 @@ html, body{
 .user-input .branch{
     height: 100%;
     width: 15%;
-    background: rgb(219, 219, 219);
+    background: rgb(228, 228, 228);
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -96,7 +98,7 @@ html, body{
 .user-input .category{
     height: 100%;
     width: 15%;
-    background: rgb(219, 219, 219);
+    background: rgb(228, 228, 228);
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -106,7 +108,7 @@ html, body{
 .user-input .rank{
     height: 100%;
     width: 15%;
-    background: rgb(219, 219, 219);
+    background: rgb(228, 228, 228);
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -116,7 +118,7 @@ html, body{
 .user-input .round{
     height: 100%;
     width: 15%;
-    background: rgb(219, 219, 219);
+    background: rgb(228, 228, 228);
     border-radius: 7px;
     display: flex;
     align-items: center;
