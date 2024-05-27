@@ -27,7 +27,6 @@ function loadCollegeNames() {
         .then(response => response.json())
         .then(data => {
             collegeNames = data;
-            console.log('College names loaded:', collegeNames);
         })
         .catch(error => {
             console.error('Error loading college names:', error);
@@ -44,12 +43,9 @@ function sendData(branch, category, rank, round) {
         return;
     }
 
-    console.log('CSV file selected:', csvFile);
-
     fetch(csvFile)
         .then(response => response.text())
         .then(csvData => {
-            console.log('CSV data loaded:', csvData);
             processData(csvData, branch, category, parseInt(rank));
         })
         .catch(error => {
@@ -61,7 +57,6 @@ function processData(csvData, branch, category, rank) {
     const rows = csvData.trim().split('\n').slice(1); // Skip the header row
     const results = [];
 
-    console.log('Processing CSV data...');
 
     rows.forEach(row => {
         const cols = row.split(',');
@@ -80,7 +75,7 @@ function processData(csvData, branch, category, rank) {
     results.sort((a, b) => a.rank - b.rank);
 
     const sortedColleges = results.map(result => ({ id: result.id, college: result.college }));
-
+        
     displayResults(sortedColleges);
 }
 
@@ -88,8 +83,9 @@ function displayResults(results) {
     const tableBody = document.querySelector('#resultsTable tbody');
     tableBody.innerHTML = '';
 
-    if (results.length > 0) {
-        results.forEach(result => {
+    const topRestult = results.slice(0 , 10);
+    if (topRestult.length > 0) {
+        topRestult.forEach(result => {
             const row = document.createElement('tr');
             
             // College ID cell
@@ -114,8 +110,6 @@ function displayResults(results) {
         tableBody.appendChild(row);
     }
     
-    document.querySelector
-
     document.getElementById('select1').value = "";
     document.getElementById('input1').value = "";
     document.getElementById('round_select').value = "";
